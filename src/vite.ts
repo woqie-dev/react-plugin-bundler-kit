@@ -4,13 +4,9 @@ import fs from "fs";
 function viteBundlerKit(): Plugin {
   return {
     name: "woqie-react-plugin-bundler-kit",
-    config(config, env) {
-      const isProduction = env.mode === "production";
+    config(config) {
 
-      // fixme: allow user to config outDir
-      const outDir = isProduction
-        ? "./build"
-        : "./build";
+      const outDir = "/build";
 
       // fixme: allow user to config manifest path
       const manifest = JSON.parse(

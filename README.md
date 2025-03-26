@@ -26,7 +26,7 @@ React插件打包套件
 - vite
 
   ```typescript
-  // vite.config.ts
+  // build.config.ts
   import { defineConfig } from "vite";
   import { viteBundlerKit } from "@woqie-dev/react-plugin-bundler-kit"; // 1. import the plugin
     
